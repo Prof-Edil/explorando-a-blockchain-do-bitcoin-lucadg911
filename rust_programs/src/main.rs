@@ -3,7 +3,6 @@ use std::env;
 use rust_programs::{run_001, run_002, run_003, run_004, run_005, run_006, run_007};
 
 fn main() {
-    println!("Hello, world!");
     let args: Vec<String> = env::args().collect();
 
     match args[1].as_str() {
