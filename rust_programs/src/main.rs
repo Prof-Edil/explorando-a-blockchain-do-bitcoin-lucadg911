@@ -1,18 +1,38 @@
 use std::env;
 
+use rust_programs::{run_001, run_002, run_003, run_004, run_005, run_006, run_007};
+
 fn main() {
     println!("Hello, world!");
     let args: Vec<String> = env::args().collect();
 
     match args[1].as_str() {
-        "001" => { println!("001"); }
-        "002" => { println!("002"); }
-        "003" => { println!("003"); }
-        "004" => { println!("004"); }
-        "005" => { println!("005"); }
-        "006" => { println!("006"); }
-        "007" => { println!("007"); }
-        "008" => { println!("008"); }
-        _ => { println!("Invalid argument"); }
+        "001" => {
+            run_001::run();
+        }
+        "002" => {
+            run_002::run();
+        }
+        "003" => {
+            run_003::run();
+        }
+        "004" => {
+            run_004::run();
+        }
+        "005" => {
+            run_005::run();
+        }
+        "006" => {
+            run_006::run();
+        }
+        "007" => {
+            run_007::run();
+        }
+        "008" => {
+            run_007::run();
+        }
+        _ => {
+            println!("Invalid argument");
+        }
     }
 }
