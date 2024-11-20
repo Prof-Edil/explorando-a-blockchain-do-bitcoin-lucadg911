@@ -1,1 +1,3 @@
-# How many new outputs were created by block 123,456?
+#!/bin/bash
+cd rust_programs/target/release
+./rust_programs 004

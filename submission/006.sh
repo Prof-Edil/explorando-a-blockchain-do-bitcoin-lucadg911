@@ -1,1 +1,3 @@
-# Which tx in block 257,343 spends the coinbase output of block 256,128?
+#!/bin/bash
+cd rust_programs/target/release
+./rust_programs 006
