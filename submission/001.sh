@@ -1,2 +1,7 @@
 # What is the hash of block 654,321?
-bitcoin-cli -rpcconnect=84.247.182.145 -rpcuser=user_240 --rpcpassword=JQs8WLu7N4dR getblockhash 654321
+#!/bin/bash
+cd ..
+cd rust_programs
+cargo build --release
+cd target/release
+./rust_programs 001
