@@ -1,3 +1,4 @@
 #!/bin/bash
+cd .. 
 cd rust_programs/target/release
-./rust_programs 004
+./rust_programs 003
