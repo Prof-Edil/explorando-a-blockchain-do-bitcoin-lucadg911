@@ -1,4 +1,5 @@
 #!/bin/bash
-cd .. 
-cd rust_programs/target/release
+cd rust_programs
+cargo build --release
+cd target/release
 ./rust_programs 003
